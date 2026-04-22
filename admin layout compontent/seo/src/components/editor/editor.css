@@ -1,0 +1,99 @@
+/* WYSIWYG Editor Styles */
+.tiptap-editor {
+    min-height: 400px;
+    padding: 1.5rem;
+}
+
+.tiptap-editor:focus {
+    outline: none;
+}
+
+/* Heading Styles */
+.tiptap-editor h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.tiptap-editor h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.tiptap-editor h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.tiptap-editor p {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+}
+
+/* Other block styles */
+.tiptap-editor blockquote {
+    border-left: 3px solid hsl(var(--primary));
+    padding-left: 1rem;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+.tiptap-editor ul,
+.tiptap-editor ol {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.tiptap-editor li {
+    margin: 0.25rem 0;
+}
+
+.tiptap-editor code {
+    background: hsl(var(--muted));
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.tiptap-editor pre {
+    background: hsl(var(--muted));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.tiptap-editor hr {
+    border: none;
+    border-top: 1px solid hsl(var(--border));
+    margin: 1.5rem 0;
+}
+
+.tiptap-editor a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+}
+
+.tiptap-editor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+/* Placeholder styling */
+.tiptap-editor p.is-editor-empty:first-child::before {
+    color: hsl(var(--muted-foreground));
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+}
