@@ -27,7 +27,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
-          <a href="/#guides" className="hover:text-primary transition-colors">Guides</a>
+          <Link to="/guides" className="hover:text-primary transition-colors">Guides</Link>
           <a href="/#features" className="hover:text-primary transition-colors">Features</a>
           <a href="/#pricing" className="hover:text-primary transition-colors">Pricing</a>
           
@@ -63,7 +63,7 @@ export default function Navbar() {
             className="md:hidden bg-white border-t border-slate-100 overflow-hidden absolute top-16 left-0 right-0 shadow-lg"
           >
             <div className="px-4 pt-2 pb-6 space-y-2">
-              <a href="/#guides" className="block px-3 py-3 rounded-lg text-slate-600 font-medium hover:bg-slate-50 transition-colors">Guides</a>
+              <Link to="/guides" className="block px-3 py-3 rounded-lg text-slate-600 font-medium hover:bg-slate-50 transition-colors">Guides</Link>
               <a href="/#features" className="block px-3 py-3 rounded-lg text-slate-600 font-medium hover:bg-slate-50 transition-colors">Features</a>
               <a href="/#pricing" className="block px-3 py-3 rounded-lg text-slate-600 font-medium hover:bg-slate-50 transition-colors">Pricing</a>
               <div className="pt-4 flex flex-col space-y-3">

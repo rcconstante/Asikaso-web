@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { 
@@ -115,7 +115,7 @@ export default function LifeStageSelector() {
                     {currentGuides.map((guide, idx) => {
                       const GuideIcon = guide.icon;
                       return (
-                        <Link to="/login" 
+                        <Link to={`/guide/${encodeURIComponent(guide.title)}`} 
                           key={idx} 
                           className="bg-white border-2 block border-[#4a89f3]/20 shadow-sm rounded-2xl p-5 hover:border-[#4a89f3]/60 hover:shadow-md transition-all duration-200 cursor-pointer group"
                         >
@@ -127,7 +127,7 @@ export default function LifeStageSelector() {
                           </h4>
                           <div className="flex items-center text-xs font-semibold text-slate-500 space-x-2">
                             <span className="capitalize">{guide.category}</span>
-                            <span>�</span>
+                            <span>•</span>
                             <span>{guide.time}</span>
                           </div>
                         </Link>
